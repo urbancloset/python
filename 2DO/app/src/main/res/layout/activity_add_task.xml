@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTaskActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="20sp"
+        android:hint="@string/add_your_task"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etdaddtask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnsettimeanddate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/outlinedTextField"
+        app:layout_constraintStart_toStartOf="@id/outlinedTextField"
+        android:layout_marginTop="20sp"
+        android:layout_marginHorizontal="20sp"
+        app:icon="@drawable/ic_add"
+        android:text="@string/set_time_and_date"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        />
+    <TextView
+        android:id="@+id/showTimeAndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnsettimeanddate"
+        app:layout_constraintBottom_toTopOf="@id/btnaddtask"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30sp"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:textAlignment="center"
+        />
+    <Button
+        android:id="@+id/btnaddtask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/showTimeAndDate"
+        app:layout_constraintStart_toStartOf="@id/outlinedTextField"
+        android:layout_marginTop="20sp"
+        app:icon="@drawable/ic_add"
+        android:text="@string/add"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">2DO</string>
+    <string name="add">ADD</string>
+    <string name="add_your_task">Add Your Task</string>
+    <string name="set_time_and_date">SET TIME AND DATE</string>
+    <string name="login">Login</string>
+    <string name="logout">LogOut</string>
+</resources>

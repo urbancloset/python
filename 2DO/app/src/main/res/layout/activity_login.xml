@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_Activity">
+
+    <TextView
+        android:id="@+id/tvlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="120sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginBottom="20sp"
+        android:gravity="center_horizontal"
+        android:text="LOGIN"
+        android:textColor="?colorSecondary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/etem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvlogin"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginBottom="20sp"
+        android:autofillHints=" "
+        android:hint="Enter E-MAIL"
+        android:inputType="text"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/etpwrd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password "
+        android:layout_below="@id/etem"
+        android:layout_margin="20sp"
+        tools:ignore="HardcodedText"
+        android:autofillHints=" "
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etpwrd"
+        android:layout_margin="20sp"
+        android:orientation="vertical">
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etpwrd"
+        android:layout_gravity="left"
+        android:text="LOGIN"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+    <TextView
+        android:id="@+id/tvinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnlogin"
+        android:layout_gravity="left"
+        android:layout_marginTop="20sp"
+        android:text="Register Here..."
+        android:textColor="?colorPrimary"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+    </LinearLayout>
+</RelativeLayout>
